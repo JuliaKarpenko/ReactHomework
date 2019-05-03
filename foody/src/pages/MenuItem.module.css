@@ -1,0 +1,33 @@
+.container{
+    composes: container from '../components/menu/MenuPage.module.css';
+    align-items: flex-start;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.button {
+    composes: button from '../components/userMenu/dropDown/DropDown.module.css';
+}
+
+.select {
+    padding: 4px 12px;
+    margin: 0 12px;
+}
+
+.commentList {
+    padding: 0;
+    margin: 0;
+    max-width: 45%;
+}
+
+.item {
+    list-style-type: none;
+    border: 1px solid gray;
+    background-color: rgb(247, 241, 242, 1);
+    margin: 12px 0;
+    padding: 8px;
+}
+.itemComment {
+    padding: 8px;
+}

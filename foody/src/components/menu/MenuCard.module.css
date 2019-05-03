@@ -1,0 +1,40 @@
+.imgWrapper {
+    overflow: hidden;
+    height: 140px;
+}
+
+.imgWrapper:hover .img {
+    transform: scale(1.2);
+}
+
+.img {
+    width: 100%;
+    height: auto;
+    transition: .5s;
+    box-sizing: border-box
+}
+
+.name {
+    text-overflow: ellipsis;
+    overflow: hidden;
+    min-height: 42px;
+}
+
+.price {
+    color: #5a5a5a;
+}
+
+.button {
+    composes: button from '../userMenu/dropDown/DropDown.module.css';
+    width: 100%;
+}
+
+.buttonsContainer{
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+    height: 86px;
+    justify-content: space-between;
+    margin: 24px 0 0 0;
+}
+
